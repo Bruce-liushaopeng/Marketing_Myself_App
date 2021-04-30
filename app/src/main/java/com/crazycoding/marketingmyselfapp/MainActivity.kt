@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         val testString = "Contact Name: $contactName, Contact Number: $contactNumber, My Display Name: $myDisplayName, Include Junior: $includeJunior, Job Title: $jobTitle, Immediate Start: $immediateStart, Start Date: $startDate"
 
         Toast.makeText(this,testString,Toast.LENGTH_LONG).show()
+        //add a random line for github testing.
 
     }
 }
