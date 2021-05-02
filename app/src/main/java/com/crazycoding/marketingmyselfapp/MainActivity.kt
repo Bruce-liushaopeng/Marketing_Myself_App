@@ -1,5 +1,6 @@
 package com.crazycoding.marketingmyselfapp //This is the package name
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -33,9 +34,8 @@ class MainActivity : AppCompatActivity() {
         val immediateStart = check_box_immediate_start.isChecked
         val startDate = edit_text_start_date.text.toString()
 
-        val testString = "Contact Name: $contactName, Contact Number: $contactNumber, My Display Name: $myDisplayName, Include Junior: $includeJunior, Job Title: $jobTitle, Immediate Start: $immediateStart, Start Date: $startDate"
-
-        Toast.makeText(this,testString,Toast.LENGTH_LONG).show()
+        val previewActivityIntent = Intent(this,PreviewActivity::class.java)
+        startActivity(previewActivityIntent)
         //add a random line for github testing.
 
     }
